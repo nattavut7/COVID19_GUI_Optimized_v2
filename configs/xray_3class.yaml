@@ -1,0 +1,41 @@
+project_name: covid19_xray_3class_pytorch
+
+dataset:
+  prepared_dir: data/prepared/xray_3class
+  image_size: 224
+  classes: [COVID, Normal, Pneumonia]
+  num_workers: 8
+  prefetch_factor: 4
+  persistent_workers: true
+  pin_memory: true
+
+training:
+  model: mobilenet_v2
+  pretrained: true
+  batch_size: 64
+  epochs: 100
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  label_smoothing: 0.05
+  early_stopping: false
+  patience: 15
+  mixed_precision: true
+  channels_last: true
+  cudnn_benchmark: true
+  allow_tf32: true
+  compile_model: false
+  gradient_accumulation_steps: 1
+
+pruning:
+  enabled: true
+  amount: 0.50
+  fine_tune_epochs: 15
+  learning_rate: 0.00005
+
+export:
+  onnx: true
+  dynamic_quantization: true
+
+output_root: outputs
+experiment_name: mobilenetv2_bs64_rtx5070ti
+seed: 42

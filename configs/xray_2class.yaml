@@ -1,0 +1,32 @@
+project_name: covid19_xray_2class_pytorch
+
+dataset:
+  prepared_dir: data/prepared/xray_2class
+  image_size: 224
+  classes: [COVID, Normal]
+  num_workers: 4
+
+training:
+  model: efficientnet_v2_s
+  pretrained: true
+  batch_size: 24
+  epochs: 20
+  learning_rate: 0.0003
+  weight_decay: 0.0001
+  label_smoothing: 0.05
+  patience: 6
+  mixed_precision: true
+  channels_last: true
+
+pruning:
+  enabled: true
+  amount: 0.90
+  fine_tune_epochs: 5
+  learning_rate: 0.00005
+
+export:
+  onnx: true
+  dynamic_quantization: true
+
+output_dir: outputs/xray_2class
+seed: 42
