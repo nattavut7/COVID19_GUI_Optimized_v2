@@ -36,6 +36,37 @@ The project has been optimized for NVIDIA RTX 50-series GPUs and Intel Core Ultr
 - Multi-Class Chest X-ray Classification
 
 ---
+# Dataset
+
+This folder is intentionally left empty.
+
+Please download the dataset before training.
+
+Recommended dataset
+
+COVID-19 Radiography Database
+
+https://www.kaggle.com/datasets/tawsifurrahman/covid19-radiography-database
+
+After downloading
+
+1. Extract into
+
+```
+data/raw/
+```
+
+2. Run
+
+```bash
+python scripts/prepare_xray.py --mode 3class
+```
+
+The processed dataset will be created automatically under
+
+```
+data/prepared/xray_3class
+```
 
 ## Supported Classes
 
