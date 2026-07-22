@@ -36,7 +36,7 @@ The project has been optimized for NVIDIA RTX 50-series GPUs and Intel Core Ultr
 - Multi-Class Chest X-ray Classification
 
 ---
-# Dataset
+## Dataset
 
 This folder is intentionally left empty.
 
