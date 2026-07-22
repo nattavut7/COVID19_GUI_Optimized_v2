@@ -307,16 +307,10 @@ MIT License
 
 **Nattavut Sriwiboon, Ph.D.**
 
-Assistant Professor
-
-Faculty of Science and Technology
-
-Kalasin University
-
-Thailand
+Department of Computer Science and Information Technology, Faculty of Science and Health Technology, Kalasin University, Kalasin, Thailand.
 
 ---
 
 ## Acknowledgements
 
-This framework has been developed to support medical AI research and GPU-accelerated deep learning applications using modern PyTorch technologies.
+The authors would like to convey their thanks and appreciation to the ‘‘Kalasin University’’ for supporting this work.
