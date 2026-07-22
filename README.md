@@ -293,7 +293,7 @@ Planned features
 
 ## Citation
 
-If you use this framework in your research, please cite this repository.
+Sriwiboon, N. Efficient and lightweight CNN model for COVID-19 diagnosis from CT and X-ray images using customized pruning and quantization techniques. Neural Computing and Applications, 37, 13059–13078 (2025). https://doi.org/10.1007/s00521-025-11219-0
 
 ---
 
@@ -305,7 +305,7 @@ MIT License
 
 ## Author
 
-**Nattavut Sriwiboon**
+**Nattavut Sriwiboon, Ph.D.**
 
 Assistant Professor
 
